@@ -14,13 +14,10 @@ import {
 import { AboutUs } from "./pages/AboutUs";
 import { MediaCampaign } from "./pages/MediaCampaign";
 
-
 import CancellationPolicyPage from "./pages/CancellationPolicy";
 import CookiesPolicyPage from "./pages/CookiesPolicy";
 import PrivacyPolicyPage from "./pages/PrivacyPolicy";
 import RefundPolicyPage from "./pages/RefundPolicy";
-
-
 
 import { LearnersPage } from "./pages/LearnersPage";
 import { CertificationsPage } from "./pages/CertificationsPage";
@@ -59,13 +56,16 @@ export default function App() {
     return <LearnersPage />;
   }
 
-if (currentPath.startsWith("/program")) {
-  // Extract variant from the path
-  const variant = currentPath.split("-")[1] || null;
+  if (currentPath.startsWith("/program")) {
+    // Extract variant from the path
+    const variant = currentPath.split("-")[1] || null;
 
-  return <Program variant_url={variant} />;
-}
+    return <Program variant_url={variant} />;
+  }
 
+  if (currentPath === "/spp") {
+    return <Program variant_url={"spp"} />;
+  }
 
   if (currentPath === "/certifications") {
     return <CertificationsPage />;
@@ -83,29 +83,25 @@ if (currentPath.startsWith("/program")) {
     return <CancellationPolicyPage />;
   }
 
-    if (currentPath === "/cookies-policy") {
+  if (currentPath === "/cookies-policy") {
     return <CookiesPolicyPage />;
   }
 
-    if (currentPath === "/privacy-policy") {
+  if (currentPath === "/privacy-policy") {
     return <PrivacyPolicyPage />;
   }
 
-    if (currentPath === "/refund-policy") {
+  if (currentPath === "/refund-policy") {
     return <RefundPolicyPage />;
   }
-
 
   if (currentPath === "/media-and-campaign") {
     return <MediaCampaign />;
   }
 
-
-
   if (currentPath === "/insurance") {
     return <InsurancePage />;
   }
-
 
   // Default landing page
   return (
