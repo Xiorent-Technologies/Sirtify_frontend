@@ -27,6 +27,7 @@ import Program from "./pages/Program";
 
 import InsurancePage from "./pages/InsurancePage";
 import { FreelancerPage } from "./pages/FreelancerPage";
+import { FrequentlyAskedQuestionsPage } from "./pages/FrequentlyAskedQuestionsPage";
 
 export default function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
@@ -118,6 +119,10 @@ if (currentPath.startsWith("/program")) {
   
   if (currentPath === "/freelancer") {
     return <FreelancerPage />;
+  }
+
+  if (currentPath === "/faq") {
+    return <FrequentlyAskedQuestionsPage />;
   }
 
 
