@@ -23,11 +23,9 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     href: "/about",
     hasDropdown: true,
     dropdownItems: [
-
       { label: "Why Sirtifai ", href: "/about" },
       // { label: "media and campaigns", href: "/media-and-campaign" },
       { label: "Insurance", href: "/insurance" },
-
     ],
   },
 
@@ -36,14 +34,10 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     href: "/program",
     hasDropdown: true,
     dropdownItems: [
-
       { label: "International ", href: "/program-skill" },
       { label: "Freelancer ", href: "/program-practice" },
       { label: "Spp", href: "/program-progress" },
-
     ],
-
-
   },
   { label: "Learners", href: "/learners" },
   { label: "Certifications", href: "/certifications" },
@@ -60,10 +54,8 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
       // { label:"Freelancer",  href:"/freelancer"},
       { label: "Sirtify International", href: "/sirtify-international" },
       { label: "Contact Us", href: "/contact" },
-      // { label: "FAQ", href: "/faq" },         
+      // { label: "FAQ", href: "/faq" },
     ],
-
-
   },
 ];
 
@@ -95,21 +87,26 @@ export const USERS: User[] = [
 export const STEPS: Step[] = [
   {
     id: 1,
-    title: "Skill Training",
+    title: "Mission :",
     description:
-      "Plan, collaborate, and publishing your content that drives meaningful engagement and growth for your brand",
+      "Skill → Practice → Progress – Practical skills, paid project experience, lifetime  job access.",
     icon: Handshake,
   },
   {
     id: 2,
-    title: "Paid Practice",
-    description: "Analyze your performance and create goegeous report",
+    title: "Vision :",
+    description:
+      "Job-First Education for Bharat – Careers with skills, work history, and networks  for all.",
     icon: Settings,
   },
   {
     id: 3,
-    title: "Lifetime Progress",
-    description: "Quiuckly navigate you anda engage with your adience",
+    title: "Future Goals :",
+    description: `1 Million Paid Learners by 2026.
+    Global career access with visa sponsorship support.
+    School-to-career readiness pipeline.
+    Real company briefs integrated into training.
+    AI-driven career tracking.`,
     icon: BarChart3,
   },
 ];
@@ -252,5 +249,5 @@ export const MEMBERSHIP_RECOGNITION = [
     name: "BBB",
     logo: "/assets/home/bbb.png",
     color: "text-black",
-  }
+  },
 ];
