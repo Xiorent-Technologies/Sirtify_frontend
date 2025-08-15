@@ -1,5 +1,6 @@
 import { Button } from "../ui/Button"
 import { CheckCircle } from "lucide-react"
+import campusactivity from "../../assets/campusactivity.jpg"
 
 export default function CampusActivities() {
   return (
@@ -7,7 +8,7 @@ export default function CampusActivities() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Campus Activities & Career Fairs</h2>
+          <h2 className="text-3xl lg:text-5xl font-semibold text-gray-900 mb-4">Campus Activities & Career Fairs</h2>
           <p className="text-lg text-gray-600">Bringing career opportunities directly to your campus</p>
         </div>
 
@@ -15,20 +16,17 @@ export default function CampusActivities() {
           {/* Left Content */}
           <div>
             <img
-              src="/placeholder.svg?height=400&width=500"
+              src={campusactivity}
               alt="Campus career fair"
-              className="w-full h-80 object-cover rounded-2xl"
+              className="w-full h-[35vw] object-cover rounded-2xl"
             />
           </div>
 
           {/* Right Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 p-6 rounded-md  shadow-[0px_4px_6px_0px_rgba(0,0,0,0.10)]">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Bring Sirtifai to Your Campus</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Partner with us to organize career fairs, workshops, and placement drives that connect your students
-                with global opportunities.
-              </p>
+
             </div>
 
             <div className="space-y-4">
@@ -65,11 +63,16 @@ export default function CampusActivities() {
                   <p className="text-gray-600">Dedicated placement assistance for participating students.</p>
                 </div>
               </div>
+
+              <p className="text-gray-600 leading-relaxed bg-zinc-200 rounded-lg px-5 py-4">
+                Partner with us to organize career fairs, workshops, and placement drives that connect your students
+                with global opportunities.
+              </p>
             </div>
 
-            <Button className="bg-[#ff7847] hover:bg-[#e56a3f] text-white px-8 py-3 rounded-full">
-              Partner With Us
-            </Button>
+        <button className="bg-[#ff7847] w-full hover:bg-[#e56a3f] text-white px-8 py-3 rounded-sm">
+          Invite Sirtifai to Your Campus
+        </button>
           </div>
         </div>
       </div>

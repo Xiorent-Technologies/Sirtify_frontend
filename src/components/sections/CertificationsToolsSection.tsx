@@ -43,14 +43,14 @@ const CERTIFICATION_TOOLS: CertificationTool[] = [
 
 export const CertificationsToolsSection = () => {
   return (
-    <section className="w-full bg-[#FEF7F1] py-20">
+    <section className="w-full bg-[#FEF7F1] sm:py-20 py-10">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center sm:mb-16 mb-6 ">
+          <h2 className="sm:text-4xl text-xl font-semibold sm:font-bold text-gray-900 sm:mb-4 mb-1">
             Tools To Accelerate Your Journey
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="sm:text-xl text-sm text-gray-600 max-w-3xl mx-auto">
             Free resources to help you identify your strengths, plan your career path, and showcase your skills.
           </p>
         </div>
@@ -58,9 +58,9 @@ export const CertificationsToolsSection = () => {
         {/* Tools Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {CERTIFICATION_TOOLS.map((tool) => (
-            <div key={tool.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div key={tool.id} className="bg-white sm:rounded-xl rounded-sm shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               {/* Top Orange Section */}
-              <div className="bg-orange-500 p-6 text-white">
+              <div className="sm:bg-orange-500 bg-orange-400 p-6 text-white">
                 <h3 className="text-lg font-bold mb-2 leading-tight">{tool.title}</h3>
                 <p className="text-orange-100 text-sm leading-relaxed">{tool.description}</p>
               </div>

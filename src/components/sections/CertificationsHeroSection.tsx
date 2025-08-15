@@ -2,34 +2,34 @@ import { BarChart3 } from 'lucide-react';
 
 export const CertificationsHeroSection = () => {
   return (
-    <section className="w-full py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="w-full py-20 bg-white">
+      <div className="max-w-7xl mx-auto  px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Side - Text Content */}
           <div>
             {/* Main Headline */}
-            <h1 className="text-6xl font-extrabold text-gray-900 mb-8 tracking-tight leading-tight">
+            <h1 className="text-5xl -mt-10 sm:-mt-0 sm:text-6xl font-semibold sm:font-extrabold text-gray-900 mb-4 sm:mb-8 tracking-tight leading-tight">
               Get Certified. Get Hired. Globally.
             </h1>
             
             {/* Description */}
-            <p className="text-xl text-gray-700 leading-relaxed mb-8">
+            <p className="text-[15px] sm:text-xl text-gray-700 leading-relaxed mb-8">
               Sirtifai certifications are NSQF-aligned, globally valid, and instantly verifiable — proof that your skills meet industry and employer standards worldwide.
             </p>
             
             {/* Call-to-Action Links */}
-            <div className="flex items-center gap-4">
-              <span className="text-lg font-semibold text-gray-900">Join Now :</span>
+            <div className="flex items-center gap-4 sm:-mt-0 -mt-7">
+              <span className="sm:text-lg text-xs sm:font-semibold text-orange-500 sm:text-gray-900">Join Now :</span>
               <div className="flex items-center gap-4">
-                <a href="#" className="text-orange-500 font-semibold hover:text-orange-600 transition-colors">
+                <a href="#" className="text-orange-500 sm:text-lg text-xs sm:font-semibold hover:text-orange-600 transition-colors">
                   SPP Int
                 </a>
                 <span className="text-gray-400">|</span>
-                <a href="#" className="text-orange-500 font-semibold hover:text-orange-600 transition-colors">
+                <a href="#" className="text-orange-500 sm:text-lg text-xs sm:font-semibold hover:text-orange-600 transition-colors">
                   SPP Freelance
                 </a>
                 <span className="text-gray-400">|</span>
-                <a href="#" className="text-orange-500 font-semibold hover:text-orange-600 transition-colors">
+                <a href="#" className="text-orange-500 sm:text-lg text-xs sm:font-semibold hover:text-orange-600 transition-colors">
                   SPP Student
                 </a>
               </div>
@@ -37,7 +37,7 @@ export const CertificationsHeroSection = () => {
           </div>
 
           {/* Right Side - Graphic & Information Box */}
-          <div className="relative">
+          <div className="relative hidden sm:block">
             {/* Main 3D Illustration */}
             <div className="relative w-full h-[500px] flex items-center justify-center">
               <img

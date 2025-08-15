@@ -1,5 +1,6 @@
 import { Header } from "../components/layout/Header";
 import { Footer } from "../components/layout/Footer";
+import MediaBanner from "../components/sections/MediaBanner"  
 import  FeaturedLearnerStories from "../components/sections/FeaturedLearnerStories";
 import  IncomeTrackerWall from "../components/sections/IncomeTrackerWall";
 import SuccessGallery from "../components/sections/SuccessGallery";
@@ -12,6 +13,7 @@ export const MediaCampaign = () => {
   return (
     <div className="bg-[#FEF7F1] font-sans min-h-screen overflow-x-hidden">
       <Header />
+      <MediaBanner/>
       <FeaturedLearnerStories />
       <IncomeTrackerWall />
       <SuccessGallery />

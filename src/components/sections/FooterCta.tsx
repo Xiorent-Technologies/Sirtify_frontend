@@ -11,13 +11,12 @@ export default function FooterCTA() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full">Start Free</Button>
-          <Button
-            variant="outline"
-            className="border-white text-white hover:bg-white hover:text-[#ff7847] px-8 py-3 rounded-full bg-transparent"
-          >
+          <button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-full">
+            Start Free
+          </button>
+          <button className="bg-gray-100   text-orange-500 px-8 py-3 rounded-full">
             Book a Free Session
-          </Button>
+          </button>
           <Button
             variant="outline"
             className="border-white text-white hover:bg-white hover:text-[#ff7847] px-8 py-3 rounded-full bg-transparent"
