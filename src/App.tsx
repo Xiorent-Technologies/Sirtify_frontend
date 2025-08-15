@@ -14,20 +14,20 @@ import {
 import { AboutUs } from "./pages/AboutUs";
 import { MediaCampaign } from "./pages/MediaCampaign";
 
-
 import CancellationPolicyPage from "./pages/CancellationPolicy";
 import CookiesPolicyPage from "./pages/CookiesPolicy";
 import PrivacyPolicyPage from "./pages/PrivacyPolicy";
 import RefundPolicyPage from "./pages/RefundPolicy";
-
-
 
 import { LearnersPage } from "./pages/LearnersPage";
 import { CertificationsPage } from "./pages/CertificationsPage";
 import { SirtifyInternationalPage } from "./pages/SirtifyInternationalPage";
 import { ContactUsPage } from "./pages/ContactUsPage";
 import Program from "./pages/Program";
+
 import InsurancePage from "./pages/InsurancePage";
+import { FreelancerPage } from "./pages/FreelancerPage";
+import { FrequentlyAskedQuestionsPage } from "./pages/FrequentlyAskedQuestionsPage";
 
 export default function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
@@ -67,11 +67,22 @@ if (currentPath.startsWith("/program")) {
 }
 
 
+  if (currentPath.startsWith("/program")) {
+    return <Program />;
+  }
+
+  if (currentPath === "/spp") {
+    return <Program />;
+  }
+
   if (currentPath === "/certifications") {
     return <CertificationsPage />;
   }
 
-  if (currentPath === "/sirtify-international") {
+  // if (currentPath === "/sirtify-international") {
+  //   return <SirtifyInternationalPage />;
+  // }
+  if (currentPath === "/international") {
     return <SirtifyInternationalPage />;
   }
 
@@ -83,15 +94,15 @@ if (currentPath.startsWith("/program")) {
     return <CancellationPolicyPage />;
   }
 
-    if (currentPath === "/cookies-policy") {
+  if (currentPath === "/cookies-policy") {
     return <CookiesPolicyPage />;
   }
 
-    if (currentPath === "/privacy-policy") {
+  if (currentPath === "/privacy-policy") {
     return <PrivacyPolicyPage />;
   }
 
-    if (currentPath === "/refund-policy") {
+  if (currentPath === "/refund-policy") {
     return <RefundPolicyPage />;
   }
 
@@ -105,6 +116,15 @@ if (currentPath.startsWith("/program")) {
   if (currentPath === "/insurance") {
     return <InsurancePage />;
   }
+  
+  if (currentPath === "/freelancer") {
+    return <FreelancerPage />;
+  }
+
+  if (currentPath === "/faq") {
+    return <FrequentlyAskedQuestionsPage />;
+  }
+
 
 
   // Default landing page
@@ -123,3 +143,4 @@ if (currentPath.startsWith("/program")) {
     </div>
   );
 }
+
